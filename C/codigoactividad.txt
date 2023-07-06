@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    
+    char respuesta1[10];
+    char respuesta2[10];
+    char respuesta3[10];
+    int  puntaje = 0;
+
+    //COMIENZO DEL JUEGO DE PREGUNTAS.
+    printf("Ingrese la respuesta a la primer pregunta: ");
+    scanf("%s",respuesta1);
+
+    printf("Ingrese la respuesta a la segunda pregunta: ");
+    scanf(" %99[^\n]",respuesta2);
+    
+    printf("Ingrese la respuesta de la pregunta 3: ");
+    scanf(" %s",respuesta3);
+
+    if (strcmp(respuesta1, "Donatelo")== 0){
+        puntaje = puntaje + 100;
+    }
+    
+    if(strcmp(respuesta2,"La piedad") == 0){
+        puntaje = puntaje + 100;
+    }
+    
+    if(strcmp(respuesta3,"Rafael") == 0){
+        puntaje = puntaje + 100;
+    }
+    
+    printf("Según las correspondientes respuestas dadas, este es su puntaje: %i\t",puntaje);
+
+    return 0;
+
+}
